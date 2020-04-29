@@ -6,7 +6,7 @@ class CustomizationForm extends Component {
         const features = Object.keys(this.props.features).map((feature, idx) => {
             const featureHash = feature + '-' + idx;
             return (
-                <CustomOption key={featureHash} id={featureHash} feature={feature} selected={this.props.selected} updateFeature={this.props.updateFeature} />
+                <CustomOption key={featureHash} id={featureHash} feature={feature} features={this.props.features} selected={this.props.selected} updateFeature={this.props.updateFeature} />
             )
             });
         return (
